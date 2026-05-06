@@ -1,3 +1,2 @@
-path=$(pwd)
-name=$(echo $path | cut -d "/" -f 5)
-echo "your name is $name"
+choice=$(echo -e "option1\noption2\noption3" | fzf)
+echo "You picked: $choice"
