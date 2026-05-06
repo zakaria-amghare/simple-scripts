@@ -1,11 +1,3 @@
-cd /mnt/c/Users/zakar/Downloads
-file=($(ls | grep "tp" ))
-for i in "${file[@]}"
-do
-
-    if [[ $i == *"("*")"*  ]]
-    then
-        echo " $i"
-        head -5 "$i" 
-    fi
-done
+path=$(pwd)
+name=$(echo $path | cut -d "/" -f 5)
+echo "your name is $name"
